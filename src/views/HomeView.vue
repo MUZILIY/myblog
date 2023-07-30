@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <el-radio v-model="radio" label="1">备选项</el-radio>
+    <el-radio v-model="radio" label="2">备选项</el-radio>
   </div>
 </template>
 
@@ -13,6 +13,11 @@ export default {
   name: 'HomeView',
   components: {
     HelloWorld
-  }
+  },
+  data () {
+      return {
+        radio: '1'
+      };
+    }
 }
 </script>
