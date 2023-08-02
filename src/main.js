@@ -5,8 +5,10 @@ import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 //全局css
-import '@/assets/global.css';
+import '@/assets/style/global.css';
+import '@/assets/style/layout.css';
 //图标
+import 'element-ui/lib/theme-chalk/index.css';
 import IconSvg from '@/components/icon-component'
 //axios
 // import axios from 'axios';

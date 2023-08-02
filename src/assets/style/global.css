@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    border: none;
+    color: currentColor;
+    outline: 0;
+    text-decoration: none;
+}
+
+/* element_ui 普通走马灯 */
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 150px;
+    margin: 0;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+     background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+     background-color: #d3dce6;
+  }
+
+
+  /* home 右侧 */
+  .side_card
+  {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.3rem
+  }
+
+  /* 多余的部分用省略号 */
+  .hid{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  /* 背景图片 */
+  .bgimages{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,22 +1,25 @@
 <template>
-  <div id="app">
-    <!-- header -->
-    <div class="header">
-       <icon-svg icon-class="a-008_shousifantuan" />
-    </div>
-
+  <div id="app" >
+    <header>
+        <NavBar></NavBar>
+    </header>
     <!-- router -->
-    <router-view/>
+    <router-view></router-view>
+
   </div>
 </template>
 
-<!-- <script src="https//at.alicdn.com/t/c/font_4189743_i85uypzpd4l.js"></script> -->
-<script src="./iconfont.js"></script>
+<!-- <script src="https://at.alicdn.com/t/c/font_4189743_m1cy1oe3aif.js"></script> -->
+<script>
+//header
+import NavBar from '@/components/NavBar.vue'
 
-<style>
-.header{
-  height: 60px;
-  line-height: 60px;
-  background-color: #fff;;
+export default {
+    components:{
+      NavBar,
+    }
 }
+</script>
+<style scoped>
+
 </style>
